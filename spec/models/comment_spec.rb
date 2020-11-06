@@ -20,8 +20,7 @@ describe Comment do
     subject { comment.article_name_and_commenter_name }
 
     it 'merges the articles name and commenters name together' do
-      false
-      # put assertion here
+      expect(subject).to eq('ben title - max')
     end
   end
 end

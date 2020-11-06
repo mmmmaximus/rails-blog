@@ -4,13 +4,10 @@ class Comment < ApplicationRecord
   validates :body, presence: true, length: { minimum: 5 }
 
   def reverse_commenter_name
-    # Reverse the commenters name and run the tests
-    # /spec/models/comment_spec.rb
+    commenter.reverse
   end
 
   def article_name_and_commenter_name
-    # Return the articles name, and the commenters name together.
-    # You will need to add an assertion in the test for this one
-    # /spec/models/comment_spec.rb
+    "#{article.title} - #{commenter}"
   end
 end

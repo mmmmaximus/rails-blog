@@ -9,7 +9,10 @@ describe Article do
   # copy the filepath from the explorer on the left.
 
   describe '.title_and_text' do
-    false
-    # Write whats missing for the test here if there is nothing added this will fail
+    subject { article.title_and_text }
+
+    it 'combines title and text' do
+      expect(subject).to eq('Ben Article Title - Ben Article Text')
+    end
   end
 end

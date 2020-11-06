@@ -5,7 +5,6 @@ class Article < ApplicationRecord
   validates :text, presence: true
 
   def title_and_text
-    # Combine the title and text together in here
-    # and then write a test for them here: /spec/models/article_spec.rb
+    "#{title} - #{text}"
   end
 end
