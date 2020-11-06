@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application following the [rails getting started guide](https://guides.rubyonrails.org/getting_started.html)
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Simply run: `bin/setup`
+Then Run: `rails s`
+And visit the application on [localhost:3000](localhost:3000)
 
-* System dependencies
+## Running tests
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rspec Documentation: https://github.com/rspec/rspec-rails
+how to run tests: `bundle exec rspec`
+how to run individual test: `bundle exec rspec <file_path>`
+copy the filepath from the explorer inside vscode.
